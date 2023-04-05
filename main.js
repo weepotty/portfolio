@@ -59,3 +59,14 @@ function addStar() {
 
 Array(200).fill().forEach(addStar);
 
+function animate() {
+  requestAnimationFrame(animate);
+
+  torus.rotation.x += 0.01;
+  torus.rotation.y += 0.005;
+  torus.rotation.z += 0.01;
+  controls.update();
+  renderer.render(scene, camera);
+}
+
+animate();
