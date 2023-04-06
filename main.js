@@ -82,6 +82,23 @@ moon.position.x = 5;
 moon.position.y = 10;
 scene.add(moon);
 
+function moveCamera() {
+  const t = document.body.getBoundingClientRect().top;
+
+  moon.rotation.x += 0.05;
+  moon.rotation.y += 0.075;
+  moon.rotation.z += 0.05;
+
+  face.rotation.y += 0.01;
+  face.rotation.z += 0.01;
+
+  camera.position.z = t * -0.01;
+  camera.position.x = t * -0.0002;
+  camera.position.y = t * -0.0002;
+}
+
+document.body.onscroll = moveCamera;
+
 function animate() {
   requestAnimationFrame(animate);
 
