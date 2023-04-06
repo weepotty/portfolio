@@ -66,6 +66,22 @@ face.position.x = 0;
 face.position.y = 1.2;
 scene.add(face);
 
+// moon
+
+const moonTexture = new THREE.TextureLoader().load("moon.jpeg");
+const normalTexture = new THREE.TextureLoader().load("normal.jpeg");
+const moon = new THREE.Mesh(
+  new THREE.SphereGeometry(3, 32, 32),
+  new THREE.MeshStandardMaterial({
+    map: moonTexture,
+    normalMap: normalTexture,
+  })
+);
+
+moon.position.x = 5;
+moon.position.y = 10;
+scene.add(moon);
+
 function animate() {
   requestAnimationFrame(animate);
 
