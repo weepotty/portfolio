@@ -27,7 +27,7 @@ const material = new THREE.MeshStandardMaterial({
 
 const torus = new THREE.Mesh(geometry, material);
 
-scene.add(torus);
+// scene.add(torus);
 
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(60, 10, 10);
