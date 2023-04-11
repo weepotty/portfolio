@@ -179,3 +179,17 @@ li {
   grid-column: 1/7;
 }
 
+.project-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.project-summary > * {
+  min-height: 100vh;
+}
+.project-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
