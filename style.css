@@ -106,3 +106,32 @@ p {
   box-shadow: 0 0 15px rgba(238, 237, 237, 0.337);
   transition: 0.3s ease-in-out;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
