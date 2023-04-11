@@ -64,6 +64,7 @@ function addStar() {
 Array(200).fill().forEach(addStar);
 
 const faceTexture = new THREE.TextureLoader().load("my-face.png");
+const faceTexture = new THREE.TextureLoader().load("images/my-face.png");
 const face = new THREE.Mesh(
   new THREE.BoxGeometry(1, 1, 1),
   new THREE.MeshBasicMaterial({ map: faceTexture })
