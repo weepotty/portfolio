@@ -226,3 +226,76 @@ li {
   height: 10px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewBox='0 0 426.667 426.667' style='enable-background:new 0 0 426.667 426.667;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath d='M213.333,106.667c-58.88,0-106.667,47.787-106.667,106.667S154.453,320,213.333,320S320,272.213,320,213.333 S272.213,106.667,213.333,106.667z' fill='gold'/%3E%3Cpath d='M213.333,0C95.467,0,0,95.467,0,213.333s95.467,213.333,213.333,213.333S426.667,331.2,426.667,213.333 S331.2,0,213.333,0z M213.333,384c-94.293,0-170.667-76.373-170.667-170.667S119.04,42.667,213.333,42.667 S384,119.04,384,213.333S307.627,384,213.333,384z' fill='gold'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
+
+/* Smallest device */
+@media (max-width: 575px) {
+  .cards,
+  .project-summary {
+    display: flex;
+    flex-direction: column;
+  }
+  #skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .container {
+    padding: 1rem;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-summary > * {
+    min-height: inherit;
+  }
+
+  .project-stats {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  /* .cards,
+  .project-summary {
+    grid-template-columns: 1fr;
+  } */
+  .cards,
+  .project-summary {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
