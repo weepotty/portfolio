@@ -47,8 +47,10 @@ scene.add(pointLight, ambientLight);
 const controls = new OrbitControls(camera, renderer.domElement);
 
 function addStar() {
-  const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+  const geometry = new THREE.SphereGeometry(0.1, 3, 3);
+  const material = new THREE.MeshStandardMaterial({
+    color: 0xc6c6c6,
+  });
   const star = new THREE.Mesh(geometry, material);
 
   // map each value to the three JS helper function to generate number between -100 and +100
