@@ -45,6 +45,32 @@ section {
   margin-bottom: 2rem;
 }
 
+footer {
+  grid-column: 1/12;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #ffd601;
+  opacity: 0.9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+footer ul {
+  padding: 0.5em;
+  margin: 0;
+}
+
+footer li i {
+  font-size: 1.5rem;
+  color: black;
+}
+
+footer i:hover {
+  transform: scale(1.2);
+  transition: all ease-in 0.3s;
+}
+
 h1 {
   font-size: 6rem;
 }
@@ -276,6 +302,10 @@ li {
   .project-summary {
     display: flex;
     flex-direction: column;
+  }
+  footer li i {
+    font-size: 1rem;
+    color: black;
   }
 }
 
