@@ -44,31 +44,33 @@ section {
   /* border: 1px solid blue; */
   margin-bottom: 2rem;
 }
-
-footer {
+nav {
   grid-column: 1/12;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  background-color: #ffd601;
-  opacity: 0.9;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 
-footer ul {
+.nav-top {
+  position: absolute;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
   padding: 0.5em;
   margin: 0;
 }
 
-footer li i {
+nav li i {
   font-size: 1.5rem;
-  color: black;
 }
 
-footer i:hover {
+nav i:hover {
   transform: scale(1.2);
   transition: all ease-in 0.3s;
+}
+
+.nav-bottom {
+  visibility: visible;
 }
 
 h1 {
@@ -198,7 +200,7 @@ li {
 }
 
 #about {
-  grid-column: 8/13;
+  grid-column: 6/13;
 }
 
 #skills {
@@ -255,6 +257,9 @@ li {
 
 /* Smallest device */
 @media (max-width: 575px) {
+  header h3 {
+    font-size: 1.5rem;
+  }
   .cards,
   .project-summary {
     display: flex;
@@ -292,23 +297,6 @@ li {
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-  /* .cards,
-  .project-summary {
-    grid-template-columns: 1fr;
-  } */
-  .cards,
-  .project-summary {
-    display: flex;
-    flex-direction: column;
-  }
-  footer li i {
-    font-size: 1rem;
-    color: black;
-  }
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .cards {
@@ -327,5 +315,11 @@ li {
 @media (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .nav-bottom {
+    visibility: hidden;
+  }
+  .nav-top {
+    position: fixed;
   }
 }
