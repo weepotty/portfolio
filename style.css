@@ -113,6 +113,16 @@ a {
   font-weight: 500;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
