@@ -70,7 +70,7 @@ const face = new THREE.Mesh(
   new THREE.MeshBasicMaterial({ map: faceTexture })
 );
 
-face.position.x = 0;
+face.position.x = -6.5;
 face.position.y = 1.2;
 scene.add(face);
 
