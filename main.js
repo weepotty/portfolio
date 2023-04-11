@@ -58,7 +58,7 @@ Array(200).fill().forEach(addStar);
 
 // face
 
-const faceTexture = new THREE.TextureLoader().load("./public/images/my-face.png");
+const faceTexture = new THREE.TextureLoader().load("images/my-face.png");
 const face = new THREE.Mesh(
   new THREE.BoxGeometry(1, 1, 1),
   new THREE.MeshBasicMaterial({ map: faceTexture })
@@ -70,8 +70,8 @@ scene.add(face);
 
 // moon
 
-const moonTexture = new THREE.TextureLoader().load("./public/images/moon.jpeg");
-const normalTexture = new THREE.TextureLoader().load("./public/images/normal.jpeg");
+const moonTexture = new THREE.TextureLoader().load("images/moon.jpeg");
+const normalTexture = new THREE.TextureLoader().load("images/normal.jpeg");
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({
