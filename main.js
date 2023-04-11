@@ -27,11 +27,6 @@ window.addEventListener("resize", function (event) {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({
-  color: 0xff6347,
-});
-
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(60, 10, 10);
 
