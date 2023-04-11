@@ -21,7 +21,7 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.setZ(30);
+// camera.position.setZ(30);
 
 window.addEventListener("resize", function (event) {
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -64,8 +64,8 @@ const face = new THREE.Mesh(
   new THREE.MeshBasicMaterial({ map: faceTexture })
 );
 
-face.position.x = -6.5;
-face.position.y = 1.2;
+face.position.x = -3;
+face.position.y = 0;
 scene.add(face);
 
 // moon
