@@ -208,6 +208,10 @@ li {
   color: #ffd601;
 }
 
+.crop {
+  width: 350px;
+}
+
 .learning ul li {
   position: relative;
   font-size: 1.3rem;
