@@ -171,3 +171,11 @@ li {
   margin: 1em 0;
 }
 
+#about {
+  grid-column: 8/13;
+}
+
+#skills {
+  grid-column: 1/7;
+}
+
