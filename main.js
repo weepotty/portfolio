@@ -4,6 +4,10 @@ import * as THREE from "three";
 
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
+console.log(
+  `\r\n#                 _  _        \r\n#    \/\\  \/\\  ___ | || |  ___  \r\n#   \/ \/_\/ \/ \/ _ \\| || | \/ _ \\ \r\n#  \/ __  \/ |  __\/| || || (_) |\r\n#  \\\/ \/_\/   \\___||_||_| \\___\/ \r\n#                             \r\n\nThanks for stopping by! 'Tell me, did you sail across the sun? Did you make it to the milky way to see the lights all faded, and that heaven is overrated?'`
+);
+
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(
