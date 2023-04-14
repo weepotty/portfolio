@@ -221,7 +221,8 @@ a {
 
 #skills ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
 }
 
 li {
@@ -288,10 +289,6 @@ li::marker {
     display: flex;
     flex-direction: column;
   }
-  #skills ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 
   section h1 {
     font-size: 3rem;
@@ -330,6 +327,10 @@ li::marker {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #skills ul {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
