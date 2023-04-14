@@ -293,6 +293,10 @@ li::marker {
   section h1 {
     font-size: 3rem;
   }
+
+  #contact h1 {
+    font-size: 3rem;
+  }
   h2 {
     font-size: 2rem;
   }
