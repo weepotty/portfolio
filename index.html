@@ -61,7 +61,7 @@
           <h3>Welcome to my tiny slice of the universe.</h3>
         </header>
 
-        <section id="about">
+        <section class="hidden" id="about">
           <h1>About Me</h1>
           <p>
             Before I discovered coding, I was a doctor in the field of
@@ -86,7 +86,7 @@
           </p>
         </section>
 
-        <section id="skills">
+        <section class="hidden" id="skills">
           <h1>My Skills</h1>
           <p>
             I honed the main skills listed below at bootcamp. Apart from this,
@@ -122,7 +122,7 @@
           </ul>
         </section>
 
-        <section id="projects">
+        <section class="hidden" id="projects">
           <h1>Projects</h1>
           <div class="cards">
             <a href="#soundstate">
@@ -186,7 +186,7 @@
           </div>
         </section>
 
-        <section id="soundstate">
+        <section id="soundstate" class="hidden">
           <h1>SoundState</h1>
           <div class="project-summary">
             <div>
@@ -235,7 +235,7 @@
                 alt="playlist filters"
               />
             </div>
-            <div>
+            <div class="hidden">
               <h3>Why This Project?</h3>
               <p>
                 Music is one of the things I enjoy the most. I found myself
@@ -248,7 +248,7 @@
                 documentation, and develop my front-end skills.
               </p>
             </div>
-            <div class="learning">
+            <div class="learning hidden">
               <h3>Learning Points</h3>
               <p>
                 As team leader, I got to develop both management as well as
@@ -256,20 +256,16 @@
                 project:
               </p>
               <ul>
+                <li>Implenting Progressive Web App features</li>
                 <li>
-                  Mobile-First Design and how to implement Progressive Web App
-                  features
-                </li>
-                <li>Setting style guidelines of the project</li>
-                <li>
-                  Keeping code clean and maintainable through the use of
-                  components, partials, service objects
+                  Clean and maintainable code: components, partials, service
+                  objects
                 </li>
                 <li>
-                  Pair programming to define a sound database schema with
-                  validations to ensure data integrity and consistency
+                  Pair programming: sound database schema with validations to
+                  ensure data integrity and consistency
                 </li>
-                <li>Deepening understanding of MVC architecture</li>
+                <li>MVC architecture</li>
                 <li>Applying RESTful principles</li>
                 <li>Integrating Spotify and OpenAI APIs</li>
                 <li>Working with OAuth</li>
@@ -281,7 +277,7 @@
                   Project management & Agile methodologies - Kanban workflow,
                   daily stand-up meetings. We had to be flexible and adaptable
                   when we realised some API limitations. For example, using
-                  embedded iframes instead of web SDK.
+                  embedded iframes instead of the web SDK.
                 </li>
               </ul>
 
@@ -295,23 +291,23 @@
                 for more details.
               </p>
             </div>
-            <div class="centered">
+            <div class="centered hidden">
               <img
                 class="crop"
                 src="images/playlist-preview.png"
                 alt="playlist preview"
               />
             </div>
-            <div class="centered">
+            <div class="centered hidden">
               <img class="crop" src="images/playlist-show.png" alt="playlist" />
             </div>
-            <div class="centered">
+            <div class="centered hidden">
               <img class="crop" src="images/gallery.png" alt="gallery" />
             </div>
           </div>
         </section>
 
-        <section id="paeds">
+        <section class="hidden" id="paeds">
           <h1>No Matter How Small</h1>
           <div class="project-summary">
             <div>
@@ -348,7 +344,7 @@
             <div class="centered">
               <img class="crop" src="images/airway.png" alt="airway" />
             </div>
-            <div>
+            <div class="hidden">
               <h3>Why This Project?</h3>
               <p>
                 As a sleep deprived parent returning to work in paediatric
@@ -366,7 +362,7 @@
                 a great skill this is to have.
               </p>
             </div>
-            <div class="learning">
+            <div class="learning hidden">
               <h3>Learning Points</h3>
               <p>Some learning highlights:</p>
               <ul>
@@ -399,23 +395,23 @@
                 >.
               </p>
             </div>
-            <div class="centered">
+            <div class="hidden centered">
               <img class="crop" src="images/guidelines.png" alt="guidelines" />
             </div>
-            <div class="centered">
+            <div class="hidden centered">
               <img
                 class="crop"
                 src="images/periop.png"
                 alt="periop guidelines"
               />
             </div>
-            <div class="centered">
+            <div class="hidden centered">
               <img class="crop" src="images/formulae.png" alt="formulae" />
             </div>
           </div>
         </section>
 
-        <section id="colour-stick">
+        <section class="hidden" id="colour-stick">
           <h1>Colour & Stick</h1>
           <div class="project-summary">
             <div>
@@ -457,14 +453,14 @@
                 alt="colouring page sidebar"
               />
             </div>
-            <div>
+            <div class="hidden">
               <h3>Why This Project?</h3>
               <p>
                 Just for fun really! Didn't want to build the usual to-do list
                 app.
               </p>
             </div>
-            <div class="learning">
+            <div class="learning hidden">
               <h3>Learning Points</h3>
               <p>Some learning highlights:</p>
               <ul>
@@ -494,7 +490,7 @@
           </div>
         </section>
 
-        <section id="cheyenese">
+        <section class="hidden" id="cheyenese">
           <h1>Ch-Eye-Nese</h1>
           <div class="project-summary">
             <div>
@@ -536,7 +532,7 @@
                 alt="playlist page"
               />
             </div>
-            <div class="learning">
+            <div class="learning hidden">
               <h3>Why This Project?</h3>
               <p>
                 I built this for foreign doctors working in Singapore (my home
@@ -557,7 +553,7 @@
         </section>
 
         <div id="contact">
-          <h1>
+          <h1 class="hidden-bottom">
             I am much cooler on my socials<span style="font-size: 0.8rem"
               >not really</span
             >
@@ -595,6 +591,6 @@
       </div>
     </main>
 
-    <script type="module" src="/main.js"></script>
+    <script defer type="module" src="/main.js"></script>
   </body>
 </html>
